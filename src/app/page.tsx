@@ -105,8 +105,9 @@ export default function HomePage() {
             ))}
           </ul>
           <p className="photo-credit">
-            Stock photos via Unsplash — replace with your shop photography for
-            the strongest local trust signal.
+            Placeholder photography is bundled in{" "}
+            <code className="photo-credit-code">/public/images</code> — swap in
+            your own bay, team, and customer bikes anytime.
           </p>
         </div>
       </section>
@@ -222,6 +223,103 @@ export default function HomePage() {
               </p>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section className="section section-alt" id="products">
+        <div className="container">
+          <header className="section-head">
+            <h2>Shop products</h2>
+            <p>
+              Besides repairs, we stock trusted bike essentials and upgrades for
+              daily commuters, road cyclists, and trail riders.
+            </p>
+          </header>
+          <ul className="product-grid">
+            <li className="product-card">
+              <div className="product-image-wrap">
+                <Image
+                  src={siteImages.services.tires.src}
+                  alt="Performance road and gravel tires on display"
+                  fill
+                  className="product-image"
+                  sizes="(max-width: 720px) 100vw, 25vw"
+                />
+              </div>
+              <div className="product-body">
+                <p className="product-kicker">Tires</p>
+                <h3>Road &amp; gravel tires</h3>
+                <p className="product-price">$49–$119</p>
+                <p>
+                  Tubeless-ready and puncture-protected options from top brands.
+                </p>
+              </div>
+            </li>
+            <li className="product-card">
+              <div className="product-image-wrap">
+                <Image
+                  src={siteImages.services.tuneUp.src}
+                  alt="Bike chain and cassette replacement parts"
+                  fill
+                  className="product-image"
+                  sizes="(max-width: 720px) 100vw, 25vw"
+                />
+              </div>
+              <div className="product-body">
+                <p className="product-kicker">Drivetrain parts</p>
+                <h3>Chains &amp; cassettes</h3>
+                <p className="product-price">$29–$249</p>
+                <p>
+                  Shimano and SRAM compatible parts matched to your bike and
+                  riding style.
+                </p>
+              </div>
+            </li>
+            <li className="product-card">
+              <div className="product-image-wrap">
+                <Image
+                  src={siteImages.services.brakes.src}
+                  alt="Brake pads and rotor components for bikes"
+                  fill
+                  className="product-image"
+                  sizes="(max-width: 720px) 100vw, 25vw"
+                />
+              </div>
+              <div className="product-body">
+                <p className="product-kicker">Braking</p>
+                <h3>Pads, rotors &amp; bleed kits</h3>
+                <p className="product-price">$15–$95</p>
+                <p>
+                  Mechanical and hydraulic brake consumables for fast service
+                  turnaround.
+                </p>
+              </div>
+            </li>
+            <li className="product-card">
+              <div className="product-image-wrap">
+                <Image
+                  src={siteImages.strip[1].src}
+                  alt="Cycling helmets and lights for safer commuting"
+                  fill
+                  className="product-image"
+                  sizes="(max-width: 720px) 100vw, 25vw"
+                />
+              </div>
+              <div className="product-body">
+                <p className="product-kicker">Accessories</p>
+                <h3>Helmets, lights &amp; locks</h3>
+                <p className="product-price">$25–$180</p>
+                <p>
+                  Daily-ride essentials for visibility, security, and safer
+                  commuting.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <p className="products-note">
+            Looking for a specific brand or item?{" "}
+            <a href="#contact">Message us</a> or call to check current stock.
+          </p>
         </div>
       </section>
 

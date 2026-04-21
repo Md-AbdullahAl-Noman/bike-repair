@@ -569,6 +569,13 @@ a:hover {
   line-height: 1.5;
 }
 
+.photo-credit-code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.95em;
+  color: var(--text);
+  opacity: 0.9;
+}
+
 /* Services */
 .service-grid {
   list-style: none;
@@ -623,6 +630,90 @@ a:hover {
   margin: 0;
   font-size: 0.9375rem;
   color: var(--text-muted);
+}
+
+/* Products */
+.product-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s;
+}
+
+.product-card:hover {
+  border-color: rgba(196, 92, 42, 0.35);
+}
+
+.product-image-wrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-bottom: 1px solid var(--border);
+}
+
+.product-image {
+  object-fit: cover;
+}
+
+.product-body {
+  padding: 1rem 1.1rem 1.25rem;
+}
+
+.product-kicker {
+  margin: 0 0 0.35rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.product-body h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+}
+
+.product-price {
+  margin: 0 0 0.45rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.product-body p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.products-note {
+  margin: 1.25rem 0 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.875rem;
 }
 
 /* Packages */

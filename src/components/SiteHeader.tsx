@@ -50,6 +50,11 @@ export function SiteHeader() {
               </a>
             </li>
             <li>
+              <a href="#products" onClick={close}>
+                Products
+              </a>
+            </li>
+            <li>
               <a href="#packages" onClick={close}>
                 Tune-ups
               </a>

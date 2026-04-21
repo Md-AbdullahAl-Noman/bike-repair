@@ -15,6 +15,9 @@ export function SiteFooter() {
               <a href="#services">Services</a>
             </li>
             <li>
+              <a href="#products">Products</a>
+            </li>
+            <li>
               <a href="#packages">Tune-ups</a>
             </li>
             <li>

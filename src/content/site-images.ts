@@ -1,42 +1,45 @@
-/** Remote images (Unsplash) — swap for your own `/public` assets when ready. */
+/**
+ * Local images in /public/images (downloaded from Unsplash; replace anytime).
+ * Using static files avoids broken remote IDs and works offline in dev.
+ */
 export const siteImages = {
   hero: {
-    src: "https://images.unsplash.com/photo-1558618047-3c8c764ca8d5?auto=format&fit=crop&w=1200&q=80",
-    alt: "Bicycle wheels and frames lined up in a repair shop",
+    src: "/images/hero.jpg",
+    alt: "Cyclists riding on a road in a group",
   },
   strip: [
     {
-      src: "https://images.unsplash.com/photo-1485965120184-e47f93b80305?auto=format&fit=crop&w=900&q=80",
-      alt: "Classic bicycles parked in a row",
+      src: "/images/strip-commuter.jpg",
+      alt: "Row of bicycles parked together",
       caption: "Commuter & city bikes",
     },
     {
-      src: "https://images.unsplash.com/photo-1576435728677-68d0fbf94e91?auto=format&fit=crop&w=900&q=80",
-      alt: "Mountain bike on a forest trail",
-      caption: "Mountain & gravel rigs",
+      src: "/images/strip-road.jpg",
+      alt: "Cyclist with a road bike outdoors",
+      caption: "Road & endurance builds",
     },
     {
-      src: "https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=900&q=80",
-      alt: "Cyclist checking a road bike outdoors",
-      caption: "Road & endurance builds",
+      src: "/images/strip-trail.jpg",
+      alt: "Person riding a bicycle outdoors",
+      caption: "Trail & weekend miles",
     },
   ] as const,
   services: {
     tuneUp: {
-      src: "https://images.unsplash.com/photo-1559348349-86f1f65817fe?auto=format&fit=crop&w=800&q=80",
-      alt: "Bicycle rear cassette and derailleur",
+      src: "/images/service-tune.jpg",
+      alt: "Bicycle rear cassette and drivetrain close-up",
     },
     tires: {
-      src: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=800&q=80",
-      alt: "Bicycles parked in a row outdoors",
+      src: "/images/service-tires.jpg",
+      alt: "Close-up of a bicycle tire tread and wheel",
     },
     brakes: {
-      src: "https://images.unsplash.com/photo-1544191696-102dbdaeeba0?auto=format&fit=crop&w=800&q=80",
-      alt: "Mechanic working on a bicycle wheel at a stand",
+      src: "/images/service-brakes.jpg",
+      alt: "Cyclist on a paved outdoor path",
     },
     drivetrain: {
-      src: "https://images.unsplash.com/photo-1507035895480-2b3155c31ba8?auto=format&fit=crop&w=800&q=80",
-      alt: "Bicycle chain and crankset close-up",
+      src: "/images/service-drivetrain.jpg",
+      alt: "Road cyclist riding on a scenic road",
     },
   },
 } as const;
